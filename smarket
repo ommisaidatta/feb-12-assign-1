@@ -1,0 +1,41 @@
+rice=900
+oil=110
+suger=80
+salt=20
+colgate=90
+drinks=120
+cname=input('enter custumor name:')
+cphno=int(input('enter custumor phno:'))
+riceq=int(input('enter no of rice packs:'))
+oilq=int(input('enter no of oil packs:'))
+sugerq=int(input('enter no of suger packs:'))
+saltq=int(input('enter no of salt packs:'))
+colgateq=int(input('enter no of colgate:'))
+drinksq=int(input('enter no of drinks:'))
+bill=(rice*riceq)+(oil*oilq)+(suger*sugerq)+(salt*saltq)+(colgate*colgateq)+(drinks*drinksq)
+if(bill>5000):
+    dis=bill*10/100
+    tax=bill*10/100
+elif(bill>3000):
+    dis=bill*8/100
+    tax=bill*10/100
+elif(bill>2000):
+    dis=bill*5/100
+    tax=bill*18/100
+elif(bill>1000):
+    dis=bill*3/100
+    tax=bill*18/100
+else:
+    print("no dis")
+tbill=bill-dis+tax
+print("bill amount",tbill)
+OUTPUT
+enter custumor name:mahesh
+enter custumor phno:215453
+enter no of rice packs:2
+enter no of oil packs:3
+enter no of suger packs:1
+enter no of salt packs:1
+enter no of colgate:2
+enter no of drinks:3
+bill amount 3130.1
